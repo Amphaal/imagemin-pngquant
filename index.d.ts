@@ -47,7 +47,7 @@ type Options = {
  * @see https://sindresorhus.com/blog/goodbye-nodejs-buffer [@typescript-eslint/ban-types]
  * @see https://github.com/imagemin/imagemin/compare/v8.0.1...main
  */
-type Plugin = (input: Buffer | NodeJS.ReadableStream) => Promise<Buffer>;
+type Plugin = (input: Uint8Array | NodeJS.ReadableStream) => Promise<Uint8Array>;
 
 /**
  * Imagemin plugin for pngquant.
