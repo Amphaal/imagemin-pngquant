@@ -43,7 +43,9 @@ type Options = {
 
 /**
  * Buffer or stream to optimize.
- * @todo Replace banned type Buffer with Uint8Array (@typescript-eslint/ban-types - https://sindresorhus.com/blog/goodbye-nodejs-buffer)
+ * @info Banned type Buffer has been replaced in Imagemin >=8.0.1 with Uint8Array, must stick to it.
+ * @see https://sindresorhus.com/blog/goodbye-nodejs-buffer [@typescript-eslint/ban-types]
+ * @see https://github.com/imagemin/imagemin/compare/v8.0.1...main
  */
 type Plugin = (input: Buffer | NodeJS.ReadableStream) => Promise<Buffer>;
 
