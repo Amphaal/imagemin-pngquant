@@ -53,4 +53,4 @@ type Plugin = (input: Buffer | NodeJS.ReadableStream) => Promise<Buffer>;
  */
 declare function imageminPngquant(options?: Options): Plugin;
 
-export { type Options, type Plugin, imageminPngquant };
+export {type Options, type Plugin, imageminPngquant};
